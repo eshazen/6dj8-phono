@@ -713,7 +713,7 @@ U 1 1 608F600E
 P 1400 4700
 F 0 "H4" H 1500 4749 50  0000 L CNN
 F 1 "MountingHole_Pad" H 1500 4658 50  0000 L CNN
-F 2 "" H 1400 4700 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_ISO7380_Pad" H 1400 4700 50  0001 C CNN
 F 3 "~" H 1400 4700 50  0001 C CNN
 	1    1400 4700
 	1    0    0    -1  
@@ -724,7 +724,7 @@ U 1 1 608F64F9
 P 1400 4375
 F 0 "H3" H 1500 4424 50  0000 L CNN
 F 1 "MountingHole_Pad" H 1500 4333 50  0000 L CNN
-F 2 "" H 1400 4375 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_ISO7380_Pad" H 1400 4375 50  0001 C CNN
 F 3 "~" H 1400 4375 50  0001 C CNN
 	1    1400 4375
 	1    0    0    -1  
@@ -735,7 +735,7 @@ U 1 1 608F689F
 P 1400 4050
 F 0 "H2" H 1500 4099 50  0000 L CNN
 F 1 "MountingHole_Pad" H 1500 4008 50  0000 L CNN
-F 2 "" H 1400 4050 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_ISO7380_Pad" H 1400 4050 50  0001 C CNN
 F 3 "~" H 1400 4050 50  0001 C CNN
 	1    1400 4050
 	1    0    0    -1  
@@ -746,7 +746,7 @@ U 1 1 608F6C2D
 P 1400 3725
 F 0 "H1" H 1500 3774 50  0000 L CNN
 F 1 "MountingHole_Pad" H 1500 3683 50  0000 L CNN
-F 2 "" H 1400 3725 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_ISO7380_Pad" H 1400 3725 50  0001 C CNN
 F 3 "~" H 1400 3725 50  0001 C CNN
 	1    1400 3725
 	1    0    0    -1  
@@ -805,6 +805,71 @@ F 3 "~" H 7150 5250 50  0001 C CNN
 F 4 "A100439CT-ND" H 7235 5159 50  0000 L CNN "CatNo"
 F 5 "DigiKey" H 7150 5250 50  0001 C CNN "Vendor"
 	1    7150 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H5
+U 1 1 608ED4CC
+P 1400 2900
+F 0 "H5" H 1500 2949 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1500 2858 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_ISO7380_Pad" H 1400 2900 50  0001 C CNN
+F 3 "~" H 1400 2900 50  0001 C CNN
+	1    1400 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 608ED922
+P 1400 3125
+F 0 "#PWR0101" H 1400 2875 50  0001 C CNN
+F 1 "GND" H 1405 2952 50  0000 C CNN
+F 2 "" H 1400 3125 50  0001 C CNN
+F 3 "" H 1400 3125 50  0001 C CNN
+	1    1400 3125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 3125 1400 3000
+Text Notes 1250 2550 0    100  ~ 0
+Turntable\nGND
+Text Notes 2375 4400 0    100  ~ 0
+Chassis\nGND
+$Comp
+L Device:Jumper_NC_Dual JP1
+U 1 1 608F7447
+P 4050 4400
+F 0 "JP1" H 4050 4639 50  0000 C CNN
+F 1 "Jumper_NC_Dual" H 4050 4548 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4050 4400 50  0001 C CNN
+F 3 "~" H 4050 4400 50  0001 C CNN
+	1    4050 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4425 4850 4050 4850
+Wire Wire Line
+	4050 4850 4050 4500
+$Comp
+L power:GND #PWR012
+U 1 1 608FFA77
+P 4300 4400
+F 0 "#PWR012" H 4300 4150 50  0001 C CNN
+F 1 "GND" H 4305 4227 50  0000 C CNN
+F 2 "" H 4300 4400 50  0001 C CNN
+F 3 "" H 4300 4400 50  0001 C CNN
+	1    4300 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth_Protective #PWR011
+U 1 1 608FFFE0
+P 3800 4400
+F 0 "#PWR011" H 4050 4150 50  0001 C CNN
+F 1 "Earth_Protective" H 4250 4250 50  0001 C CNN
+F 2 "" H 3800 4300 50  0001 C CNN
+F 3 "~" H 3800 4300 50  0001 C CNN
+	1    3800 4400
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
