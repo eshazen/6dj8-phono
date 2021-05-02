@@ -231,7 +231,7 @@ U 1 1 608FA178
 P 2625 4150
 F 0 "U1" H 3175 4559 50  0000 C CNN
 F 1 "6CA4" H 3175 4468 50  0000 C CNN
-F 2 "Valve:Valve_Noval_P" H 2725 4150 50  0001 C CNN
+F 2 "my-capacitors:P-ST9-700-PC" H 2725 4150 50  0001 C CNN
 F 3 "" H 2725 4150 50  0001 C CNN
 F 4 "Socket_P-ST9-221G" H 3175 4377 50  0000 C CNN "CatNo"
 F 5 "AES" H 2625 4150 50  0001 C CNN "Vendor"
@@ -453,8 +453,10 @@ U 1 1 608DCC22
 P 2075 4050
 F 0 "T1" H 2075 4475 50  0000 C CNN
 F 1 "Transformer_272X" H 2075 4384 50  0000 C CNN
-F 2 "" H 2075 3850 50  0001 C CNN
+F 2 "my-connectors:Hammond-272X" H 2075 3850 50  0001 C CNN
 F 3 "~" H 2075 3850 50  0001 C CNN
+F 4 "HM5014-ND" H 2075 4050 50  0001 C CNN "CatNo"
+F 5 "DigiKey" H 2075 4050 50  0001 C CNN "Vendor"
 	1    2075 4050
 	1    0    0    -1  
 $EndComp
@@ -496,8 +498,10 @@ U 1 1 608EA2C9
 P 6150 4050
 F 0 "J2" H 6178 4026 50  0000 L CNN
 F 1 "Conn_01x06_Female" H 6178 3935 50  0000 L CNN
-F 2 "" H 6150 4050 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0615_1x06_P3.00mm_Vertical" H 6150 4050 50  0001 C CNN
 F 3 "~" H 6150 4050 50  0001 C CNN
+F 4 "A33211-ND" H 6625 4050 50  0000 C CNN "CatNo"
+F 5 "DigiKey" H 6150 4050 50  0001 C CNN "Vendor"
 	1    6150 4050
 	1    0    0    -1  
 $EndComp
@@ -507,8 +511,10 @@ U 1 1 608EF69C
 P 6150 4975
 F 0 "J3" H 6178 4951 50  0000 L CNN
 F 1 "Conn_01x06_Female" H 6178 4860 50  0000 L CNN
-F 2 "" H 6150 4975 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0615_1x06_P3.00mm_Vertical" H 6150 4975 50  0001 C CNN
 F 3 "~" H 6150 4975 50  0001 C CNN
+F 4 "A33211-ND" H 6650 4975 50  0000 C CNN "CatNo"
+F 5 "DigiKey" H 6150 4975 50  0001 C CNN "Vendor"
 	1    6150 4975
 	1    0    0    -1  
 $EndComp
@@ -522,8 +528,6 @@ Wire Wire Line
 	3975 5625 3975 5050
 Wire Wire Line
 	3975 5050 3300 5050
-Wire Wire Line
-	2475 5250 3600 5250
 Wire Wire Line
 	3925 5250 3925 5675
 Wire Wire Line
@@ -541,7 +545,7 @@ Wire Wire Line
 Wire Wire Line
 	3875 5725 3875 5450
 Wire Wire Line
-	3875 5450 3100 5450
+	3875 5450 3825 5450
 Wire Wire Line
 	5400 5075 5400 4150
 Wire Wire Line
@@ -580,7 +584,6 @@ Wire Wire Line
 	5825 4050 5950 4050
 Connection ~ 5825 4975
 NoConn ~ 2475 4450
-NoConn ~ 2475 4650
 NoConn ~ 2475 4850
 $Comp
 L my_tubes:6CA4 U1
@@ -588,9 +591,9 @@ U 2 1 608F103B
 P 3700 5850
 F 0 "U1" H 4434 6036 50  0000 L CNN
 F 1 "6CA4" H 4434 5945 50  0000 L CNN
-F 2 "Valve:Valve_Noval_P" H 3800 5850 50  0001 C CNN
+F 2 "my-capacitors:P-ST9-700-PC" H 3800 5850 50  0001 C CNN
 F 3 "" H 3800 5850 50  0001 C CNN
-F 4 "Socket_P-ST9-221G" H 3675 6475 50  0000 L CNN "CatNo"
+F 4 "Socket_P-ST9-221G" H 3925 6400 50  0000 L CNN "CatNo"
 	2    3700 5850
 	-1   0    0    1   
 $EndComp
@@ -603,36 +606,126 @@ Wire Wire Line
 	3300 5650 3300 5050
 Connection ~ 3300 5050
 Wire Wire Line
-	3300 5050 2475 5050
+	3300 5050 2775 5050
 $Comp
 L Device:R_US R3
 U 1 1 608F6885
-P 3600 5825
-F 0 "R3" H 3668 5871 50  0000 L CNN
-F 1 "100R" H 3668 5780 50  0000 L CNN
-F 2 "" V 3640 5815 50  0001 C CNN
-F 3 "~" H 3600 5825 50  0001 C CNN
-	1    3600 5825
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3600 5675 3600 5250
-Connection ~ 3600 5250
-Wire Wire Line
-	3600 5250 3925 5250
-$Comp
-L power:Earth #PWR09
-U 1 1 608F8FEA
-P 3600 5975
-F 0 "#PWR09" H 3600 5725 50  0001 C CNN
-F 1 "Earth" H 3600 5825 50  0001 C CNN
-F 2 "" H 3600 5975 50  0001 C CNN
-F 3 "~" H 3600 5975 50  0001 C CNN
-	1    3600 5975
-	1    0    0    -1  
+P 3675 4900
+F 0 "R3" H 3743 4946 50  0000 L CNN
+F 1 "100" H 3743 4855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal" V 3715 4890 50  0001 C CNN
+F 3 "~" H 3675 4900 50  0001 C CNN
+F 4 "BC4517CT-ND" H 3675 4900 50  0001 C CNN "CatNo"
+F 5 "DigiKey" H 3675 4900 50  0001 C CNN "Vendor"
+	1    3675 4900
+	0    -1   -1   0   
 $EndComp
 Text Notes 6325 3925 0    50   ~ 0
 LEFT CHANNEL
 Text Notes 6300 4875 0    50   ~ 0
 RIGHT CHANNEL\n
+$Comp
+L Device:R_US R4
+U 1 1 608F726D
+P 2925 4900
+F 0 "R4" H 2993 4946 50  0000 L CNN
+F 1 "100" H 2993 4855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0414_L11.9mm_D4.5mm_P15.24mm_Horizontal" V 2965 4890 50  0001 C CNN
+F 3 "~" H 2925 4900 50  0001 C CNN
+F 4 "BC4517CT-ND" H 2925 4900 50  0001 C CNN "CatNo"
+F 5 "DigiKey" H 2925 4900 50  0001 C CNN "Vendor"
+	1    2925 4900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2775 4900 2775 5050
+Connection ~ 2775 5050
+Wire Wire Line
+	2775 5050 2475 5050
+Wire Wire Line
+	3075 4900 3075 5250
+Wire Wire Line
+	3075 5250 3525 5250
+Wire Wire Line
+	3525 4900 3525 5250
+Connection ~ 3525 5250
+Wire Wire Line
+	3525 5250 3925 5250
+Wire Wire Line
+	3825 4900 3825 5450
+Connection ~ 3825 5450
+Wire Wire Line
+	3825 5450 3100 5450
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 608F7FF6
+P 4050 1550
+F 0 "H1" H 4150 1599 50  0000 L CNN
+F 1 "MountingHole_Pad" H 4150 1508 50  0000 L CNN
+F 2 "MountingHolesInch:Mtg6-32" H 4050 1550 50  0001 C CNN
+F 3 "~" H 4050 1550 50  0001 C CNN
+	1    4050 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 608F8DF7
+P 4050 1850
+F 0 "H2" H 4150 1899 50  0000 L CNN
+F 1 "MountingHole_Pad" H 4150 1808 50  0000 L CNN
+F 2 "MountingHolesInch:Mtg6-32" H 4050 1850 50  0001 C CNN
+F 3 "~" H 4050 1850 50  0001 C CNN
+	1    4050 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 608F9601
+P 4050 2150
+F 0 "H3" H 4150 2199 50  0000 L CNN
+F 1 "MountingHole_Pad" H 4150 2108 50  0000 L CNN
+F 2 "MountingHolesInch:Mtg6-32" H 4050 2150 50  0001 C CNN
+F 3 "~" H 4050 2150 50  0001 C CNN
+	1    4050 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 608F9D7C
+P 4050 2450
+F 0 "H4" H 4150 2499 50  0000 L CNN
+F 1 "MountingHole_Pad" H 4150 2408 50  0000 L CNN
+F 2 "MountingHolesInch:Mtg6-32" H 4050 2450 50  0001 C CNN
+F 3 "~" H 4050 2450 50  0001 C CNN
+	1    4050 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1650 3900 1650
+Wire Wire Line
+	3900 1650 3900 1950
+Wire Wire Line
+	3900 1950 4050 1950
+Wire Wire Line
+	3900 1950 3900 2250
+Wire Wire Line
+	3900 2250 4050 2250
+Connection ~ 3900 1950
+Wire Wire Line
+	3900 2250 3900 2550
+Wire Wire Line
+	3900 2550 4050 2550
+Connection ~ 3900 2250
+$Comp
+L power:Earth_Protective #PWR09
+U 1 1 60900DF7
+P 3900 2550
+F 0 "#PWR09" H 4150 2300 50  0001 C CNN
+F 1 "Earth_Protective" H 4350 2400 50  0001 C CNN
+F 2 "" H 3900 2450 50  0001 C CNN
+F 3 "~" H 3900 2450 50  0001 C CNN
+	1    3900 2550
+	1    0    0    -1  
+$EndComp
+Connection ~ 3900 2550
 $EndSCHEMATC

@@ -1,0 +1,11 @@
+(fp_lib_table
+  (lib (name my-capacitors)(type KiCad)(uri /home/hazen/work/6dj8-phono/boards/phono-amp/my-capacitors.pretty)(options "")(descr ""))
+  (lib (name my-connectors)(type KiCad)(uri /home/hazen/work/6dj8-phono/boards/phono-amp/my-connectors.pretty)(options "")(descr ""))
+  (lib (name PT190_2)(type KiCad)(uri /home/hazen/work/6cy7-amp/amp/PT190_2.pretty)(options "")(descr ""))
+  (lib (name GSP1_power_entry)(type KiCad)(uri /home/hazen/work/6cy7-amp/amp/GSP1_power_entry.pretty)(options "")(descr ""))
+  (lib (name Hammond-L)(type KiCad)(uri /home/hazen/work/6cy7-amp/amp/Hammond-L.pretty)(options "")(descr ""))
+  (lib (name HBH_fuse_holder)(type KiCad)(uri /home/hazen/work/6cy7-amp/amp/HBH_fuse_holder.pretty)(options "")(descr ""))
+  (lib (name MountingHolesInch)(type KiCad)(uri /home/hazen/work/6cy7-amp/amp/MountingHolesInch.pretty)(options "")(descr ""))
+  (lib (name neon)(type KiCad)(uri /home/hazen/work/6cy7-amp/amp/neon.pretty)(options "")(descr ""))
+  (lib (name Switch_8GA)(type KiCad)(uri /home/hazen/work/6cy7-amp/amp/Switch_8GA.pretty)(options "")(descr ""))
+)
