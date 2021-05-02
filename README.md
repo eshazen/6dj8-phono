@@ -13,3 +13,5 @@ Single tube (6DJ8/ECC88) per channel.  RCA inputs and outputs, plus GND.  Power 
 ## Progress
 
 *2021-05-01* - Schematics done for PS and amp.  Footprints done and DigiKey numbers on amp schematic, starting placement
+
+*2021-05-02* - Finished amp layout, placement for PS.  Resized boards so the stack of 3 has the same footprint as the 6CY7 amp (7.5 x 15").
